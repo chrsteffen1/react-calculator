@@ -6,10 +6,10 @@ const getStlyeName = btn => {
   return className[btn]
 }
 
-const Button = ({value}) => {
+const Button = ({onClick, value}) => {
   return (  
     <>
-      <button className={`${getStlyeName(value)} button`}>{value}</button>
+      <button className={`${getStlyeName(value)} button`} onClick={onClick}>{value}</button>
     </>
   );
 }
