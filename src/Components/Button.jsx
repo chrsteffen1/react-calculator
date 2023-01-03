@@ -1,6 +1,7 @@
-const Button = () => {
+const Button = ({value}) => {
   return (  
     <>
+      <button>{value}</button>
     </>
   );
 }

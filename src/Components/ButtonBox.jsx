@@ -1,8 +1,9 @@
-const ButtonBox = () => {
+const ButtonBox = ({children}) => {
   return (  
     <>
+      {children}
     </>
   );
 }
- 
+
 export default ButtonBox;

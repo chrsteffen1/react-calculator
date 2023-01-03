@@ -1,6 +1,8 @@
 import './App.css';
 import Wrapper from './Components/Wrapper';
 import Screen from './Components/Screen';
+import ButtonBox from './Components/ButtonBox';
+import Button from './Components/Button';
 
 
 const btnValues = [
@@ -15,8 +17,12 @@ function App() {
   return (
     <div className="App">
       <Wrapper>
-        <h1>App</h1>
         <Screen />
+        <ButtonBox>
+          {btnValues.flat().map((btn, idx) => (
+            <Button value={btn} key={idx}/>
+          ))}
+        </ButtonBox>
       </Wrapper>
     </div>
   );
