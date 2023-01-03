@@ -1,8 +1,8 @@
-const Screen = () => {
+const Screen = ({value}) => {
   return (  
-    <>
-      Hello
-    </>
+    <div className="screen">
+      {value}
+    </div>
   );
 }
 
