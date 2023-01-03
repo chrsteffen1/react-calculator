@@ -1,7 +1,15 @@
+
+const getStlyeName = btn => {
+  const className = {
+    '=' : 'equals'
+  }
+  return className[btn]
+}
+
 const Button = ({value}) => {
   return (  
     <>
-      <button>{value}</button>
+      <button className={`${getStlyeName(value)} button`}>{value}</button>
     </>
   );
 }

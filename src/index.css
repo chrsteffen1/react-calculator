@@ -19,3 +19,30 @@ body{
   border-radius: 1rem;
   box-shadow: 0px 20px 59px 55px rgba(0,0,0,0.1);
 }
+
+.button-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+}
+
+button{
+  background: lightblue;
+  height: 3.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+}
+
+button:hover{
+  border: 2px solid black;
+}
+
+.equals{
+  grid-column: 3/5;
+}
